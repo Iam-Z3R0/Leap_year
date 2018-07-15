@@ -18,8 +18,7 @@ def is_leap(year):
     # check if the year is divisible by 4 or 100 or 400
     elif year % 4 == 0 or year % 100 == 0 or year % 400 == 0:
         leap = True
-    elif year % 4 == 0
-    else:
+    elif year % 4 != 0 or year % 100 != 0 or year % 400 != 0:
         leap = False
 
     return leap
