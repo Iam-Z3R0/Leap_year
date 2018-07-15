@@ -9,13 +9,12 @@ check the source: https://www.timeanddate.com/date/leapyear.html
 
 
 def is_leap(year):
-
     leap = False
 
     if 1900 >= year >= 10**5:
-        print("The year has to be between 1900 and 100000")
+        print("Enter a proper year")
 
-    elif year % 4 == 0 or year % 400 == 0 and year != 0:
+    elif (year % 400 == 0) or (year % 4 == 0) and (year % 100 != 0):
         leap = True
     else:
         leap = False
